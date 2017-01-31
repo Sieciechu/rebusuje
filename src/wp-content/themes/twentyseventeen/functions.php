@@ -63,6 +63,8 @@ function twentyseventeen_setup() {
 		'top'    => __( 'Top Menu', 'twentyseventeen' ),
 		'social' => __( 'Social Links Menu', 'twentyseventeen' ),
 	) );
+    add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link',
+        'video', 'image', 'quote' ) );
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
