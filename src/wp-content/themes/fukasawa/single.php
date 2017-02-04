@@ -57,7 +57,7 @@
 				
 				<div class="post-header">
 													
-                                    <h1 class="post-title"><?php the_date();?>, #<?php the_ID();?></h1>
+                                    <h1 class="post-title">#<?php the_ID();?>, <?php the_date();?></h1>
 															
 				</div> <!-- /post-header -->
 				    
