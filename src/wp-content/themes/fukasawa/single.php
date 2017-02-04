@@ -57,7 +57,7 @@
 				
 				<div class="post-header">
 													
-					<h1 class="post-title"><?php the_title(); ?></h1>
+                                    <h1 class="post-title"><?php the_date();?>, #<?php the_ID();?></h1>
 															
 				</div> <!-- /post-header -->
 				    
@@ -133,7 +133,11 @@
 			
 			</div> <!-- /post-navigation -->
 								
-			<?php comments_template( '', true ); ?>
+			<?php
+                        if(get_option( 'page_comments' )){
+                            comments_template( '', true );
+                        }
+                        ?>
 		
 		</div> <!-- /post -->
 									                        
