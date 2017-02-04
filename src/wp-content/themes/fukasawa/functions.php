@@ -50,7 +50,7 @@ function fukasawa_setup() {
 function fukasawa_load_javascript_files() {
 
 	if ( !is_admin() ) {		
-		wp_enqueue_script( 'masonry' );
+		wp_enqueue_script( 'imagesloaded' );
 		wp_enqueue_script( 'fukasawa_flexslider', get_template_directory_uri().'/js/flexslider.min.js', array('jquery'), '', true );
 		wp_enqueue_script( 'fukasawa_global', get_template_directory_uri().'/js/global.js', array('jquery'), '', true );
 		if ( is_singular() ) wp_enqueue_script( "comment-reply" );		
