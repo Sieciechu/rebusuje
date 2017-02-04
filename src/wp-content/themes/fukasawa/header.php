@@ -118,7 +118,7 @@
 			 
 			 	<p>&copy; <?php echo date("Y") ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></p>
                                 <p>
-                                    <a href="mailto:wojciech.mocek@gmail.com" style="opacity: 0.3;" rel="author">
+                                    <a id="author-mail" href="mailto:wojciech.mocek@gmail.com" rel="author">
                                         <?php _e('Made by','fukasawa');?>
                                         <?php _e('Wojciech Mocek','fukasawa');?>
                                     </a>
