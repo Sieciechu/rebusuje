@@ -41,43 +41,22 @@
 			 </ul>
 		 
 		</div> <!-- /mobile-navigation -->
-	
-		<div class="sidebar">
-		
-			<?php if ( get_theme_mod( 'fukasawa_logo' ) ) : ?>
+                <div id="top-menu" class="top-menu">
+                    <?php if ( get_theme_mod( 'fukasawa_logo' ) ) : ?>
 			
-		        <a class="blog-logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
-		        	<img src='<?php echo esc_url( get_theme_mod( 'fukasawa_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>'>
-		        </a>
-		
-			<?php elseif ( get_bloginfo( 'description' ) || get_bloginfo( 'title' ) ) : ?>
-		
-				<h1 class="blog-title">
-					<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a>
-				</h1>
-				
-			<?php endif; ?>
-			
-			<a class="nav-toggle hidden" title="<?php _e('Click to view the navigation','fukasawa') ?>" href="#">
-			
-				<div class="bars">
-				
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
-					
-					<div class="clear"></div>
-				
-				</div>
-				
-				<p>
-					<span class="menu"><?php _e('Menu','fukasawa') ?></span>
-					<span class="close"><?php _e('Close','fukasawa') ?></span>
-				</p>
-			
-			</a>
-			
-			<ul class="main-menu">
+                    <a class="blog-logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
+                            <img src='<?php echo esc_url( get_theme_mod( 'fukasawa_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>'>
+                    </a>
+
+                    <?php elseif ( get_bloginfo( 'description' ) || get_bloginfo( 'title' ) ) : ?>
+
+                            <h1 class="blog-title">
+                                    <a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a>
+                            </h1>
+
+                    <?php endif; ?>
+                    
+                    <ul class="top-menu">
 				
 				<?php if ( has_nav_menu( 'primary' ) ) {
 																	
@@ -99,7 +78,36 @@
 				} ?>
 				
 			 </ul>
-			 
+                
+                    
+                    
+                </div>
+                
+                
+                
+		<div class="sidebar">
+		
+			
+			
+			<a class="nav-toggle hidden" title="<?php _e('Click to view the navigation','fukasawa') ?>" href="#">
+			
+				<div class="bars">
+				
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+					
+					<div class="clear"></div>
+				
+				</div>
+				
+				<p>
+					<span class="menu"><?php _e('Menu','fukasawa') ?></span>
+					<span class="close"><?php _e('Close','fukasawa') ?></span>
+				</p>
+			
+			</a>
+			
 			 <div class="widgets">
 			 
 			 	<?php dynamic_sidebar('sidebar'); ?>
