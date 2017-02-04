@@ -103,6 +103,7 @@ require_once (get_template_directory() . "/widgets/flickr-widget.php");
 require_once (get_template_directory() . "/widgets/recent-comments.php");
 require_once (get_template_directory() . "/widgets/recent-posts.php");
 require_once (get_template_directory() . "/widgets/video-widget.php");
+require_once (get_template_directory() . "/widgets/rss-widget.php");
 
 
 // Delist the WordPress widgets replaced by custom theme widgets
