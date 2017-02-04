@@ -843,7 +843,10 @@ ul.top-menu > li + li::before {
 
 
 /*  Posts meta  ----------------------------------------- */
-
+.posts-top {
+    color: #bbb;
+    font-size: 0.8em;
+}
 
 .posts-meta {
 	margin-top: 20px;
@@ -2304,7 +2307,7 @@ img#wpstats { display: none; }
 	.post.single .post-inner { padding-top: 30px; }
 	
 	.post.single .post-title {
-		font-size: 1.75em;
+		font-size: 1.2em;
 		margin-bottom: 20px;
 	}
 	
