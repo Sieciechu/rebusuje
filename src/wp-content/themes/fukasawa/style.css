@@ -734,7 +734,7 @@ ul.top-menu > li + li::before {
         float: left;
 }
 .posts .post-container:first-child {
-    width: 80%;
+    width: 100%;
     float: none;
     margin-left: auto;
     margin-right: auto;
