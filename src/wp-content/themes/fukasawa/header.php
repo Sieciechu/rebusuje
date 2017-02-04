@@ -108,9 +108,14 @@
 			 
 			 <div class="credits">
 			 
-			 	<p>&copy; <?php echo date("Y") ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a>.</p>
-			 	<p><?php _e('Powered by','fukasawa'); ?> <a href="http://www.wordpress.org">WordPress</a>.</p>
-			 	<p><?php _e('Theme by','fukasawa'); ?> <a href="http://www.andersnoren.se">Anders Nor&eacute;n</a>.</p>
+			 	<p>&copy; <?php echo date("Y") ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name'); ?></a></p>
+                                <p>
+                                    <a href="mailto:wojciech.mocek@gmail.com" style="opacity: 0.3;" rel="author">
+                                        <?php _e('Made by','fukasawa');?>
+                                        <?php _e('Wojciech Mocek','fukasawa');?>
+                                    </a>
+                                </p>
+                                    
 			 	
 			 </div>
 			
