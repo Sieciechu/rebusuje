@@ -49,7 +49,10 @@ function sh_post_types_custom_box() {
 function sh_featured_box($post){
     wp_nonce_field( plugin_basename( __FILE__ ), $post->post_type . '_noncename' );
 
-    $hide_featured = get_post_meta( $post->ID, '_hide_featured', true ); ?>
+    $hide_featured = get_post_meta( $post->ID, '_hide_featured', true ) ?: 1; // set "hide featured image check - yes" radio as default
+    
+    ?>
+
     <input type="radio" name="_hide_featured" value="1" <?php checked( $hide_featured, 1 ); ?>><?php _e( 'Yes', 'HideImage' ); ?>&nbsp;&nbsp;
     <input type="radio" name="_hide_featured" value="2" <?php checked( $hide_featured, 2 ); ?>><?php _e( 'No', 'HideImage' ); ?><?php
                                         
