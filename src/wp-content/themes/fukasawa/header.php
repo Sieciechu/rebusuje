@@ -15,32 +15,7 @@
 	
 	<body <?php body_class(); ?>>
 	
-		<div class="mobile-navigation">
-	
-			<ul class="mobile-menu">
-						
-				<?php if ( has_nav_menu( 'primary' ) ) {
-																	
-					wp_nav_menu( array( 
-					
-						'container' => '', 
-						'items_wrap' => '%3$s',
-						'theme_location' => 'primary'
-													
-					) ); } else {
-				
-					wp_list_pages( array(
-					
-						'container' => '',
-						'title_li' => ''
-					
-					));
-					
-				} ?>
-				
-			 </ul>
-		 
-		</div> <!-- /mobile-navigation -->
+		
                 <div id="top-menu" class="top-menu">
                     <?php if ( get_theme_mod( 'fukasawa_logo' ) ) : ?>
 			
@@ -81,9 +56,34 @@
                 
                     
                     
-                </div>
+                </div> <!-- /top-menu -->
                 
-                
+                <div class="mobile-navigation">
+	
+			<ul class="mobile-menu">
+						
+				<?php if ( has_nav_menu( 'primary' ) ) {
+																	
+					wp_nav_menu( array( 
+					
+						'container' => '', 
+						'items_wrap' => '%3$s',
+						'theme_location' => 'primary'
+													
+					) ); } else {
+				
+					wp_list_pages( array(
+					
+						'container' => '',
+						'title_li' => ''
+					
+					));
+					
+				} ?>
+				
+			 </ul>
+		 
+		</div> <!-- /mobile-navigation -->
                 
 		<div class="sidebar">
 		
