@@ -948,6 +948,13 @@ ul.top-menu > li + li::before {
 .post.single .post-title a:hover { color: #019EBD; }
 
 
+section.rebus input.rebus {
+    width: 15rem;
+}
+section.rebus {
+    text-align: center;
+}
+
 /* Page links  ----------------------------------------- */
 
 
