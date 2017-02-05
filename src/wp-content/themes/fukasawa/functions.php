@@ -473,5 +473,3 @@ add_action( 'wp_head' , array( 'fukasawa_Customize' , 'fukasawa_header_output' )
 
 // Enqueue live preview javascript in Theme Customizer admin screen
 add_action( 'customize_preview_init' , array( 'fukasawa_Customize' , 'fukasawa_live_preview' ) );
-
-?>
