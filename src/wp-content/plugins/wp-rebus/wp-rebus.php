@@ -15,7 +15,9 @@
  * @wordpress-plugin
  * Plugin Name:       Rebus checker
  * Plugin URI:        about:blank
- * Description:       This plugin creates input password and checks if typed password is correct
+ * Description:       This plugin creates input password and checks if typed password is correct.
+ *  Just write [hasło="password to guess"] and it will be transformed into input field and button.
+ *  Password-answer comparison is case INsensitive.
  * Version:           1.0.0
  * Author:            Wojciech Mocek
  * Author URI:        http://wojciechmocek.nstrefa.pl/

@@ -952,6 +952,7 @@ ul.top-menu > li + li::before {
 
 section.rebus input.rebus {
     width: 15rem;
+    text-transform: lowercase;
 }
 section.rebus {
     text-align: center;
