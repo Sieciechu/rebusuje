@@ -26,7 +26,13 @@
                     <?php elseif ( get_bloginfo( 'description' ) || get_bloginfo( 'title' ) ) : ?>
 
                             <h1 class="blog-title">
-                                    <a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a>
+                                    <a href="<?php echo esc_url( home_url() ); ?>"
+                                       title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>"
+                                       rel="home">
+                                            <img draggable="false" class="emoji" alt="😃" draggable="false">
+                                            <?php echo esc_attr( get_bloginfo( 'title' ) ); ?>
+                                            <img draggable="false" class="emoji" alt="😉" src="">
+                                    </a>
                             </h1>
 
                     <?php endif; ?>
