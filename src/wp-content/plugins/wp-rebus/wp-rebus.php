@@ -63,10 +63,15 @@ function filter_the_content_for_the_rebus_password( $content ) {
 /**
  * 
  * @param string $rebusPassword
- * @return string Description
+ * @return string html partial
+ * @uses file _input_single.phtml
  */
 function create_rebus_checker($rebusPassword){
-    return str_replace('{encodedAnswer}', base64_encode($rebusPassword), file_get_contents(__DIR__.'/_input_single.phtml'));
+    return str_replace(
+        '{encodedAnswer}',
+        encodeThePassword($rebusPassword),
+        file_get_contents(__DIR__.'/_input_single.phtml')
+    );
 }
 
 
@@ -76,3 +81,12 @@ add_action('wp_enqueue_scripts', function(){
     }
     
 });
+
+/**
+ * 
+ * @param string $string
+ * @return string
+ */
+function encodeThePassword($string){
+    return base64_encode(rawurlencode($string));
+}
