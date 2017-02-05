@@ -848,6 +848,7 @@ ul.top-menu > li + li::before {
     font-size: 0.8em;
 }
 
+
 .posts-meta {
 	margin-top: 20px;
 	font-size: 0.75em;
@@ -936,12 +937,13 @@ ul.top-menu > li + li::before {
 
 
 .post.single .post-title {
-	font-size: 2em;
+	font-size: 1.5rem;
 	line-height: 120%;
 	font-weight: 700;
 	margin-bottom: 40px;
 	word-break: break-word;
 	-ms-word-break: break-word;
+        color: #333;
 }
 
 .post.single .post-title a { color: #333; }
@@ -1028,7 +1030,6 @@ section.rebus {
 
 
 .post-navigation { 
-	background: #f2f2f2; 
 	min-height: 2px;
 }
 
