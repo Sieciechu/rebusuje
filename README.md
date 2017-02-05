@@ -21,7 +21,9 @@ UPDATE `wp_users` SET `user_email` = 'your.email@server.com' where `user_email`=
 ## API Reference
 
 Most changes were done in:
+
 wp-content/themes/fukasawa/*
+
 wp-content/plugins/wp-rebus/*
 
 
