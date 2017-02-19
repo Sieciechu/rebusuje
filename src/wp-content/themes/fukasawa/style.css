@@ -360,7 +360,6 @@ ul.top-menu > li + li::before {
     width: 1.5rem;
 }
 
-
 /* -------------------------------------------------------------------------------- */
 /*	4. Widgets
 /* -------------------------------------------------------------------------------- */
@@ -723,6 +722,7 @@ ul.top-menu > li + li::before {
 .posts .post-container { 
 	padding: 10px;
 	overflow: hidden;
+        box-shadow: 0 0 8px -6px #000;
 }
 
 .posts .post,
