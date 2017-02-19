@@ -348,13 +348,16 @@ body a,
 
 
 ul.top-menu > li + li::before {
-    color: #DDD;
-    content: "/";
+    background-color: black;
+    border-radius: 100%;
+    content: " ";
     font-weight: 700;
-    left: -1.6em;
-    margin-top: -8px;
+    height: 1.5rem;
+    left: -2em;
+    margin-top: -10px;
     position: absolute;
     top: 50%;
+    width: 1.5rem;
 }
 
 
