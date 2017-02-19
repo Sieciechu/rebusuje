@@ -953,7 +953,17 @@ ul.top-menu > li + li::before {
 section.rebus input.rebus {
     width: 15rem;
     text-transform: lowercase;
+    transition: all 0.3s ease 0s;
 }
+
+section.rebus input.correctAnswer {
+    background-color: #93ff9d;
+}
+
+section.rebus input.badAnswer {
+    background-color: #ff9393;
+}
+
 section.rebus {
     text-align: center;
 }
