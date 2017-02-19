@@ -146,13 +146,10 @@ img {
 	font-size: 0.71em;
 }
 
-
-.wrapper { margin-left: 280px; }
-
 .content {
-	width: 1200px;
-	max-width: 86%;
-	margin: 40px auto 50px 0;
+	width: 60vw;
+        max-width: 900px;
+	margin: 40px auto;
 }
 
 .content.thin { 
@@ -720,24 +717,9 @@ ul.top-menu > li + li::before {
 /*	5. Blog
 /* -------------------------------------------------------------------------------- */
 
-
-.posts { 
-    max-width: 900px;
-}
-
-
-
 .posts .post-container { 
-	width: 33.33333%; 
 	padding: 10px;
 	overflow: hidden;
-        float: left;
-}
-.posts .post-container:first-child {
-    width: 100%;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .posts .post,
@@ -2112,13 +2094,15 @@ img#wpstats { display: none; }
 	
 	/* blog */
 	
-	.posts .post-container { width: 50%; }
+        .content {
+            width: 600px
+        }
 	
 			
 }
 
 
-@media ( max-width: 1000px ) {
+@media ( max-width: 1070px ) {
 	
 	
 	/* structure */
@@ -2279,10 +2263,6 @@ img#wpstats { display: none; }
 	
 	
 	/* blog */
-	
-	.posts .post-container { width: 50%; }
-	
-	
 }
 
 
