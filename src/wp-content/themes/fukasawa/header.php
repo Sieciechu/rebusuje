@@ -6,6 +6,7 @@
 		
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+		<link href="https://fonts.googleapis.com/css?family=Kalam:300,400,700&amp;subset=latin-ext" rel="stylesheet">
 				
 		<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
 		 
@@ -29,9 +30,7 @@
                                     <a href="<?php echo esc_url( home_url() ); ?>"
                                        title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>"
                                        rel="home">
-                                            <img draggable="false" class="emoji" alt="😃" draggable="false">
                                             <?php echo esc_attr( get_bloginfo( 'title' ) ); ?>
-                                            <img draggable="false" class="emoji" alt="😉" src="">
                                     </a>
                             </h1>
 
