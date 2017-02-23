@@ -724,7 +724,6 @@ ul.top-menu > li + li::before {
 .posts .post,
 .posts .page {
 	width: 100%;
-	padding: 16px;
 	background: #fff;
 	position: relative;
 }
@@ -2280,7 +2279,6 @@ img#wpstats { display: none; }
 	.post.single .post-inner { padding-top: 30px; }
 	
 	.post.single .post-title {
-		font-size: 1.2em;
 		margin-bottom: 20px;
 	}
 	
