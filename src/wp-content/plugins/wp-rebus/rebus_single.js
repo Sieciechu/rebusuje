@@ -27,14 +27,12 @@
     function setInputCssAnswerClass($input, $isCorrect){
         var classToToggle = ($isCorrect) ? 'correctAnswer' : 'badAnswer';
         
-        var toogleClassWithFadeIn = function($jqElement, classNameToToggle){
-            $jqElement.toggleClass(classNameToToggle).fadeIn(500);
+        var toggleCssClassWithFadeEffect = function(){
+            $input.toggleClass(classToToggle).fadeIn(500);
         };
         
-        toogleClassWithFadeIn($input, classToToggle);
+        toggleCssClassWithFadeEffect();
 
-        setTimeout(function(){
-            toogleClassWithFadeIn($input, classToToggle);
-        }, 2000);
+        setTimeout(toggleCssClassWithFadeEffect, 2000);
     }
 })(jQuery);
