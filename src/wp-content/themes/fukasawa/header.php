@@ -35,6 +35,25 @@
                             </h1>
 
                     <?php endif; ?>
+
+					<a class="nav-toggle hidden" title="<?php _e('Click to view the navigation','fukasawa') ?>" href="#">
+			
+				<div class="bars">
+				
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+					
+					<div class="clear"></div>
+				
+				</div>
+				
+				<p>
+					<span class="menu"><?php _e('Menu','fukasawa') ?></span>
+					<span class="close"><?php _e('Close','fukasawa') ?></span>
+				</p>
+			
+			</a>
                     
                     <ul class="top-menu">
 				
@@ -59,9 +78,9 @@
 				
 			 </ul>
                 
+                    		
                     
-                    
-                </div> <!-- /top-menu -->
+                
                 
                 <div class="mobile-navigation">
 	
@@ -86,32 +105,19 @@
 					
 				} ?>
 				
-			 </ul>
+			 </ul>		 
 		 
 		</div> <!-- /mobile-navigation -->
+
+
                 
+</div> <!-- /top-menu -->
+
 		<div class="sidebar">
 		
 			
 			
-			<a class="nav-toggle hidden" title="<?php _e('Click to view the navigation','fukasawa') ?>" href="#">
 			
-				<div class="bars">
-				
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
-					
-					<div class="clear"></div>
-				
-				</div>
-				
-				<p>
-					<span class="menu"><?php _e('Menu','fukasawa') ?></span>
-					<span class="close"><?php _e('Close','fukasawa') ?></span>
-				</p>
-			
-			</a>
 			
 			 <div class="widgets">
 			 

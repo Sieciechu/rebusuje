@@ -11,10 +11,6 @@ jQuery(document).ready(function($) {
 	});
 	
 	
-
-	
-
-
 	// Toggle navigation
 	$(".nav-toggle").on("click", function(){	
 		$(this).toggleClass("active");
