@@ -2466,11 +2466,3 @@ img#wpstats { display: none; }
 
 		
 }
-
-@media 
-(-webkit-min-device-pixel-ratio: 2), 
-(min-resolution: 192dpi) { 
-    .posts .post-container { 
-        box-shadow: 0 0 8px -3px #333;
-}
-}
