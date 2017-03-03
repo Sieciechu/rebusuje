@@ -16,7 +16,7 @@
 	
 	<body <?php body_class(); ?>>
 	
-		
+        <div id="top-wrapper">
                 <div id="top-menu" class="top-menu">
                     <?php if ( get_theme_mod( 'fukasawa_logo' ) ) : ?>
 			
@@ -112,7 +112,7 @@
 
                 
 </div> <!-- /top-menu -->
-
+</div>
 		<div class="sidebar">
 		
 			

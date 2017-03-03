@@ -300,6 +300,20 @@ body a,
 
 /* Navigation --------------------------------------- */
 
+#top-wrapper {
+    position: static;
+    height: 5em;
+    z-index: 9999;
+}
+
+#top-menu {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
+}
+
 #top-menu h1 {
     text-align: center;
     margin-bottom: 18px;
