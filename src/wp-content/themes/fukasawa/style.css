@@ -907,8 +907,23 @@ ul.top-menu > li + li::before {
 
 .post-inner {
 	margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
 }
-
+.post-header {
+    flex: 1 1 100%;
+}
+.post-inner .nav-left {
+    order: 1;
+}
+.post-inner .post-content {
+    order: 2;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.post-inner .nav-right {
+    order: 3;
+}
 
 /* Post header  ----------------------------------------- */
 
@@ -917,7 +932,6 @@ ul.top-menu > li + li::before {
 	font-size: 1.5rem;
 	line-height: 120%;
 	font-weight: 700;
-	margin-bottom: 40px;
 	word-break: break-word;
 	-ms-word-break: break-word;
         color: #333;
@@ -985,7 +999,9 @@ section.rebus {
 /* Post meta bottom  ----------------------------------------- */
 
 
-.post-meta-bottom { 
+.post-meta-bottom {
+    flex: 1 1 100%;
+    order: 4;
 	margin-top: 40px;
 	font-size: 0.85em;
 	color: #999;
@@ -1019,21 +1035,21 @@ section.rebus {
 
 .post-navigation { 
 	min-height: 2px;
+        align-items: center;
+        display: flex;
 }
 
 .post-navigation a {
-	display: block;
-	width: 48.5%;
-	height: 60px;
-	margin-top: 3%;
-	margin-bottom: 3%;
-	background: #e2e2e2;
-	overflow: hidden;
-	position: relative;
+    background: #e2e2e2 none repeat scroll 0 0;
+    border-radius: 50%;
+    display: block;
+    height: 3rem;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    overflow: hidden;
+    position: relative;
+    width: 3rem;
 }
-
-.post-navigation .post-nav-prev { float: left; }
-.post-navigation .post-nav-next { float: right; }
 
 .post-navigation p {
 	width: 100%;

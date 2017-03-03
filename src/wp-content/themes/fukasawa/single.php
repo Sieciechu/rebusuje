@@ -74,6 +74,35 @@
 					?>
 			    
 			    </div> <!-- /post-content -->
+                            
+                       <?php
+				$prev_post = get_previous_post();
+                                $next_post = get_next_post();
+				?>
+			
+			<div class="post-navigation nav-left">
+			
+				<?php
+				if (!empty( $prev_post )): ?>
+				
+					<a class="post-nav-prev" title="<?php _e('Previous post', 'fukasawa'); echo ': ' . esc_attr( get_the_title($prev_post) ); ?>" href="<?php echo get_permalink( $prev_post->ID ); ?>">
+						<p>&larr;</p>
+					</a>
+				<?php endif; ?>
+                        </div>  <!-- /post-navigation -->
+			
+			<div class="post-navigation nav-right">
+			
+				<?php
+				if (!empty( $next_post )): ?>
+					
+					<a class="post-nav-next" title="<?php _e('Next post', 'fukasawa'); echo ': ' . esc_attr( get_the_title($next_post) ); ?>" href="<?php echo get_permalink( $next_post->ID ); ?>">					
+						<p>&rarr;</p>
+					</a>
+			
+				<?php endif; ?>
+				
+			</div> <!-- /post-navigation -->
 			    
 			    <div class="clear"></div>
 				
@@ -105,34 +134,6 @@
 			
 			</div> <!-- /post-inner -->
 			
-			<?php
-				$prev_post = get_previous_post();
-				$next_post = get_next_post();
-			?>
-			
-			<div class="post-navigation">
-			
-				<?php
-				if (!empty( $prev_post )): ?>
-				
-					<a class="post-nav-prev" title="<?php _e('Previous post', 'fukasawa'); echo ': ' . esc_attr( get_the_title($prev_post) ); ?>" href="<?php echo get_permalink( $prev_post->ID ); ?>">
-						<p>&larr; <?php _e('Previous post', 'fukasawa'); ?></p>
-					</a>
-				<?php endif; ?>
-				
-				<?php
-				if (!empty( $next_post )): ?>
-					
-					<a class="post-nav-next" title="<?php _e('Next post', 'fukasawa'); echo ': ' . esc_attr( get_the_title($next_post) ); ?>" href="<?php echo get_permalink( $next_post->ID ); ?>">					
-						<p><?php _e('Next post', 'fukasawa'); ?> &rarr;</p>
-					</a>
-			
-				<?php endif; ?>
-				
-				<div class="clear"></div>
-			
-			</div> <!-- /post-navigation -->
-								
 			<?php
                         if(get_option( 'page_comments' )){
                             comments_template( '', true );
