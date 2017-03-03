@@ -312,6 +312,7 @@ body a,
     width: 100%;
     z-index: 9999;
     background-color: white;
+    padding-bottom: 0.7rem;
 }
 
 #top-menu h1 {
