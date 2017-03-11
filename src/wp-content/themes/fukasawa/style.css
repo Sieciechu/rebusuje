@@ -263,7 +263,6 @@ body a,
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #333;
-    border-bottom: 1px solid #dedede;
 }
 
 .blog-title a:hover {
