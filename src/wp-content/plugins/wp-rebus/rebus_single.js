@@ -1,11 +1,4 @@
-(function($){
-    
-    $(window).on('load', function(){
-        $('.post-navigation').css(
-            'height',
-            $('.post-content img').css('height')
-        );
-    });
+(function($){  
     
     $('#check_rebus').click(function(){
         
