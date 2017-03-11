@@ -2148,6 +2148,10 @@ img#wpstats { display: none; }
         text-align: left;
         margin-bottom: 0;
     }
+    
+    #top-wrapper {
+        height: 2em;
+    }
 
 
     .wrapper { margin-left: 0; }
@@ -2205,6 +2209,36 @@ img#wpstats { display: none; }
         position: absolute;
         left: -19px;
         top: 2px;
+    }
+    
+    .post-navigation {
+        display: flex;
+        flex: 1 1 50%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .post-navigation a {
+        border-radius: 0%;
+        width: 100%;
+    }
+    
+    .post-nav-next > p::before {
+        content: "następny ";
+    }
+    
+    .post-nav-prev > p::after {
+        content: " poprzedni";
+    }
+    
+    .post-inner .nav-left {
+        order: 3;
+    }
+    .post-inner .post-content {
+        order: 2;
+    }
+    .post-inner .nav-right {
+        order: 4;
     }
 
     /* nav toggle */
@@ -2293,6 +2327,7 @@ img#wpstats { display: none; }
     .posts .post-container { 
         width: 100%; 
         padding: 0;
+        padding-bottom: 1rem;
     }
 
     .posts .post-container + .post-container { margin-top: 20px; }
