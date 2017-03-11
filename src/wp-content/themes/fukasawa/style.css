@@ -731,7 +731,7 @@ ul.top-menu > li + li::before {
 /* -------------------------------------------------------------------------------- */
 
 .posts .post-container { 
-    padding: 10px 10px 20px;
+    padding: 10px 10px 1rem;
     overflow: hidden;
     border-bottom: 1px solid #dedede;
 }
