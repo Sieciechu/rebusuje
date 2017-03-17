@@ -25,4 +25,17 @@ jQuery(document).ready(function($) {
 			$(".mobile-navigation").hide();
 		}
 	});
+
+	// make small navbar after scroll
+	$(document).scroll(function(e){
+		var scrollTop = $(document).scrollTop();
+		if(scrollTop > 0){
+			//console.log(scrollTop);
+			$('#top-menu').addClass("small");
+		} else {
+			$('#top-menu').removeClass("small");
+		}
+	});
+
 });
+

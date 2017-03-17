@@ -314,6 +314,19 @@ body a,
     padding-bottom: 0.7rem;
 }
 
+#top-menu.small{
+    font-size: 18px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+}
+
+#top-menu.small h1{
+    margin-bottom: 0
+}
+
+#top-menu.small .blog-title a{
+    padding: 10px 13px 2px;
+}
+
 #top-menu h1 {
     text-align: center;
     margin-bottom: 18px;
