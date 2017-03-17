@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
 	
 	$(gestures.container).on('dbltap', function(){
 		
-			jQuery(location).attr('href', gestures.destination );
+			// jQuery(location).attr('href', gestures.destination );
 	
 		}
 	).on('swipeleft', function() {
