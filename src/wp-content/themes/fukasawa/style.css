@@ -1293,6 +1293,11 @@ code, kbd, pre {
 	max-width: 100%;
 }
 
+.post-content img{
+	display: block;
+	margin: 0 auto;
+}
+
 .post-content .wp-caption { margin-bottom: 1.5em; }
 @media
 img.alignleft,
