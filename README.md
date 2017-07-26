@@ -12,9 +12,9 @@ Project is dedicated to our friend
   
   UPDATE `wp_options` SET `option_name` = REPLACE(`option_name`,'test5.loc','yourhostname.com');
   
-  UPDATE `wp_options` SET `option_name` = REPLACE(`option_name`,'wojciech.mocek@gmail.com','your.email@server.com');
+  UPDATE `wp_options` SET `option_name` = REPLACE(`option_name`,[my mail here],'your.email@server.com');
   
-  UPDATE `wp_users` SET `user_email` = 'your.email@server.com' WHERE `user_email`='wojciech.mocek@gmail.com';
+  UPDATE `wp_users` SET `user_email` = 'your.email@server.com' WHERE `user_email`=[my mail here];
 
 3. **Update wp-config.php!** - database password, database user, and so on
 4. If sever cannot open files, be sure to grant proper file rights (on my Nginx+PHP-FPM I use chmod 775)
